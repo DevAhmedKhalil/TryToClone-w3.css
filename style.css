@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* 
+===================
+*    1) Header
+===================
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+a:hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+/* House icon */
+.fa-house-chimney {
+  font-size: 11px;
+}
+
+/* Search icon */
+.fa-magnifying-glass {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+/* Down icon */
+
+.logo {
+  background-color: #009688;
+}
+
+.links-parent {
+  background-color: #eee;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 460px;
+  visibility: hidden;
+}
+.links-parent a {
+  color: black;
+}
+.links-parent a:hover {
+  background-color: #918b8b;
+  position: relative;
+  display: inline-block;
+}
+
+.down:hover + .links-parent {
+  display: block;
+  visibility: visible;
+}
+
+/* 
+===================
+*    2) Image
+===================
+*/
+
+.main-img {
+  width: 100%;
+  height: 350px;
+}
+
+.learn {
+  color: red;
+  position: relative;
+  bottom: 90px;
+  left: 50px;
+  background-color: black;
+  color: white;
+}
+.learn:hover {
+  background-color: teal;
+}
+
+/* 
+=====================
+* 3) Our Team Section
+=====================
+*/
+
+#team {
+  padding-top: 70px;
+}
+
+.team {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.team,
+.meet {
+  text-align: center;
+}
+
+.team {
+  margin-bottom: 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.name1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.flex {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+/* 
+=====================
+* 4) Our Work Section
+=====================
+*/
+
+#work {
+  padding-top: 90px;
+}
+
+.our-work-sec {
+  margin: 60px 0 0 0;
+  padding: 40px 0 40px 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+}
+
+.our-work-div {
+  color: white;
+  width: 25%;
+  margin: 20px;
+  line-height: 25px;
+  font-size: larger;
+}
+.our-work-div h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.white-card {
+  background-color: #fff;
+  width: 250px;
+  height: 400px;
+  line-height: 30px;
+}
+
+.snow-img {
+  width: 100%;
+  height: 200px;
+}
+
+.white-card h3,
+.white-card p {
+  padding-left: 10px;
+}
+
+/* 
+========================
+*    5) Pricing Section
+========================
+*/
+#price {
+  padding-top: 90px;
+}
+
+.pricing {
+  text-align: center;
+  margin-top: 100px;
+}
+.pricing h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.basic {
+  border: 1px solid gainsboro;
+  width: 30%;
+  margin-top: 60px;
+}
+.basic:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.basic h4 {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+}
+.basic p {
+  border: 1px solid gainsboro;
+  padding: 20px 16px;
+}
+.basic span {
+  font-weight: bold;
+}
+
+.sign-up {
+  background-color: #009688;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px 24px;
+}
+.sign-up-div {
+  background-color: #f0f0f0;
+}
+
+.plans-parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.per-month {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+.fa-dollar-sign {
+  letter-spacing: 4px;
+  font-size: 30px;
+  padding: 20px 5px 20px 5px;
+}
+.dollar-num {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+/* 
+====================
+*    6) Contact Us
+====================
+*/
+
+#contact {
+  padding-top: 90px;
+}
+
+.contact-us-sec {
+  margin-top: 100px;
+  background-color: #f0f0f0;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-us-div {
+  /* border: 2px solid red; */
+  width: 40%;
+  line-height: 90px;
+}
+.contact-us-div h1 {
+  display: inline-block;
+  border-bottom: 6px solid #009688;
+  font-size: 30px;
+  font-weight: 500;
+}
+.contact-us-div p {
+  font-size: 15px;
+  line-height: 3;
+}
+.address {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+.fa-location-dot,
+.fa-phone,
+.fa-envelope {
+  color: #009688;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.real-form {
+  /* border: 2px solid blue; */
+  background-color: white;
+  width: 50%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid gainsboro;
+  height: 30px;
+  width: 100%;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  float: right;
+}
+
+/* 
+====================
+*    7) Map Image
+====================
+*/
+
+.map-img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+===============
+*    8) Footer
+===============
+*/
+footer {
+  margin-top: 100px;
+  background-color: black;
+  padding: 40px 0;
+}
+
+footer h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer p a {
+  background-color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer p a:hover {
+  background-color: black;
+  color: white;
+}
+
+.social-icons {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.social-icons div {
+  background-color: #009688;
+  color: white;
+  padding: 8px 16px;
+  margin: 10px;
+}
+.social-icons div:hover {
+  background-color: #ccc;
+  color: black;
+}
